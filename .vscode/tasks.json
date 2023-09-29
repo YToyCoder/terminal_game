@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+
+  "tasks": [
+    {
+      "label": "cmake_build",
+      "command": "cmake",
+      "group": {
+        "kind": "build",
+        // "isDefault": true
+      },
+      "args": [
+        "-G=Unix Makefiles", 
+        ".."
+      ],
+      "options": {
+        "cwd": "${workspaceRoot}/build"
+      }
+    },
+
+    {
+      "label": "make_build",
+      "command": "make",
+      "args": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {
+        "cwd": "${workspaceRoot}/build"
+      },
+      "dependsOn" : ["cmake_build"]
+    }
+  ],
+}

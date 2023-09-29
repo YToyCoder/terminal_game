@@ -1,0 +1,17 @@
+
+cmake_minimum_required(VERSION 3.21.1)
+
+project(c++20-test)
+
+set(CMAKE_CXX_STANDARD 11)
+
+set(game_source game/tetris.cc)
+set(game_include game/tetris.h)
+
+if(CMAKE_COMPILER_IS_GNUCXX)
+  add_compile_options(-g -D_CONSOLE)
+endif(CMAKE_COMPILER_IS_GNUCXX)
+
+add_executable(main ${game_include})
+
+target_sources(main PUBLIC main.cc ${game_source})
