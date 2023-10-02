@@ -20,12 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\game\tetris.cc" />
-    <ClCompile Include="..\..\..\head.cc" />
     <ClCompile Include="..\..\..\main.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\game\tetris.h" />
-    <ClInclude Include="..\..\..\head.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
