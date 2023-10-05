@@ -3,10 +3,10 @@ cmake_minimum_required(VERSION 3.21.1)
 
 project(c++20-test)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 20)
 
-set(game_source game/tetris.cc)
-set(game_include game/tetris.h)
+set(game_source game/tetris.cc game/snake.cc)
+set(game_include game/game.h)
 
 if(CMAKE_COMPILER_IS_GNUCXX)
   add_compile_options(-g -D_CONSOLE)

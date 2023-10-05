@@ -1,6 +1,10 @@
-#include "tetris.h"
+#include "game.h"
+
+#include <windows.h>
+
 #include <thread>
 #include <vector>
+#include <string>
 
 namespace Game {
   std::wstring tetromino[7];
